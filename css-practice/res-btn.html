@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+
+    <style>
+      button {
+        margin-left: 5px;
+        /* by default they are aligned by text */
+        /* vertical-align: top;  */
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      .subscribe-btn {
+        border-width: 0;
+        background-color: rgb(202, 0, 0);
+        color: white;
+        padding: 8px 15px;
+      }
+
+      .subscribe-btn:hover {
+        opacity: 0.6;
+      }
+
+      .subscribe-btn:active {
+        opacity: 0.3;
+      }
+
+      .join-btn {
+        border: 1.5px solid rgb(5, 108, 143);
+        background-color: white;
+        color: rgb(5, 108, 143);
+        padding: 8px 15px;
+        transition: background-color 0.2s, color 0.2s;
+      }
+
+      .join-btn:hover {
+        background-color: rgb(5, 108, 143);
+        color: white;
+      }
+
+      .join-btn:active {
+        opacity: 0.6;
+      }
+
+      .tweet-btn {
+        background-color: rgb(81, 173, 253);
+        color: white;
+        font-weight: 600;
+        padding: 8px 15px;
+        border-width: 0;
+        border-radius: 16px;
+      }
+
+      .tweet-btn:hover {
+        box-shadow: 5px 5px 10px rgba(19, 16, 16, 0.15);
+      }
+
+      .tweet-btn:active {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Source of Exercise from
+      <a href="https://supersimple.dev/exercises/buttons"
+        >https://supersimple.dev/exercises/buttons</a
+      >
+    </p>
+    <button class="subscribe-btn">SUBSCRIBE</button>
+    <button class="join-btn">JOIN</button>
+    <button class="tweet-btn">Tweet</button>
+  </body>
+</html>

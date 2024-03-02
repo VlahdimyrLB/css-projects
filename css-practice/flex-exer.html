@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .container-2 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .container-3 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .container-4 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 5px 0px;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="background-color: aqua; width: 200px">200px</div>
+      <div style="background-color: rgb(255, 0, 157); width: 75px">75px</div>
+    </div>
+
+    <div class="container-2">
+      <div style="background-color: aqua; width: 50px">50px</div>
+      <div style="background-color: rgb(255, 0, 157); flex: 1"></div>
+      <div style="background-color: aqua; width: 50px">50px</div>
+    </div>
+
+    <div class="container-3">
+      <div style="background-color: aqua">even</div>
+      <div style="background-color: rgb(255, 0, 157)">even</div>
+      <div style="background-color: aqua">even</div>
+      <div style="background-color: rgb(255, 0, 157)">even</div>
+    </div>
+
+    <div class="container-4">
+      <div style="background-color: aqua">even</div>
+      <div style="background-color: rgb(255, 0, 157)">even</div>
+    </div>
+  </body>
+</html>
